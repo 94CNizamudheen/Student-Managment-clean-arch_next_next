@@ -10,20 +10,24 @@ export class MongoStudentRepository implements StudentRepository{
     constructor(@InjectModel('Student') private studentModel:Model<StudentDocument>){}
 
     async save(student: Student): Promise<Student> {
-        const createdStudent= new this.studentModel(student);
-        return createdStudent.save();
+        const createdStudent= await this.studentModel.create(student);
+        return createdStudent as Student
     }
     async findById(id: string): Promise<Student | null> {
-        return this.studentModel.findById(id).exec();
+        const student = await this.studentModel.findById(id).exec();
+        return student as Student
     }
     async findAll(): Promise<Student[]> {
-        return this.studentModel.find().exec();
+       const student= await this.studentModel.find().exec();
+       return student as Student[]
     }
     async update(id: string, data: Student): Promise<Student | null> {
-        return this.studentModel.findByIdAndUpdate(id,data,{new:true}).exec()
+        const res= await this.studentModel.findByIdAndUpdate(id,data,{new:true}).exec();
+        return res as Student
     }
     async delete(id: string): Promise<boolean> {
         const result=await this.studentModel.findByIdAndDelete(id).exec()
         return !!result;
     }
-}
+};
+
