@@ -59,7 +59,7 @@ const StudentList: React.FC = () => {
                             <td className="border border-gray-300 p-2">{student.classId}</td>
                             <td className="border border-gray-300 p-2">{student.parantId}</td>
                             <td className="border border-gray-300 p-2">
-                                <Link href='../students/edit' className="text-blue-500 mr-2">Edit</Link>
+                                <Link href='/students/edit' className="text-blue-500 mr-2">Edit</Link>
                                 <button onClick={()=>handleDelete(student.id)}>Delete</button>
                             </td>
                         </tr>

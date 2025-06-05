@@ -12,9 +12,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-
-// Metadata for SEO and page title
-
 export const metadata: Metadata = {
   title: "School management System",
   description: "Student CRUD Frontend",
@@ -27,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-gray-100"  >
+      <body className={`${geistSans.variable} ${geistMono.variable} bg-gray-100`}>
         {children}
       </body>
     </html>

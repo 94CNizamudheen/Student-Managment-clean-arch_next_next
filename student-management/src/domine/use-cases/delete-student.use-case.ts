@@ -1,8 +1,12 @@
 
 import { StudentRepository } from "../repositories/students.repository";
-
+import { Inject } from "@nestjs/common";
 export class DeleteSutudentUseCase {
-    constructor(private studentRepository: StudentRepository) { };
+
+    constructor(
+        @Inject('StudentRepository')
+        private studentRepository: StudentRepository
+    ) { };
     async execute(id: string): Promise<boolean> {
         return this.studentRepository.delete(id)
     }

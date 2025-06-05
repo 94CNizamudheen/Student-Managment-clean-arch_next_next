@@ -5,7 +5,7 @@ import Navbar from '@/components/Navbar';
 // Add Student page
 export default function AddStudent() {
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-gray-800">
       {/* Navigation Bar */}
       <Navbar />
       {/* Student Form */}

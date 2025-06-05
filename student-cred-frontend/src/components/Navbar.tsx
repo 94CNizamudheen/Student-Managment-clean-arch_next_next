@@ -16,7 +16,7 @@ const Navbar = () => {
             <div className="container mx-auto px-4 py-3 flex justify-between items-center">
                 <div className="hidden md:flex space-x-6">
                     <Link href='/' className="hover:text-gray-200" >Home</Link>
-                    <Link href='/students' className="hover:text-gray-200" >Student</Link>
+                    <Link href='/students/list' className="hover:text-gray-200" >Student List</Link>
                     <Link href='/students/add' className="hover:text-gray-200" >New Student</Link>
                 </div>
                 <button className="md:hidden flex items-center" onClick={toggleMenu}>
@@ -39,7 +39,7 @@ const Navbar = () => {
         {isOpen && (
             <div className="md:hidden bg-blue-600" >
                 <Link href='/' onClick={toggleMenu}   className="block px-4 py-2 hover:bg-blue-700">Home</Link>
-                <Link href='/students' onClick={toggleMenu}   className="block px-4 py-2 hover:bg-blue-700">Students</Link>
+                <Link href='/students/list' onClick={toggleMenu}   className="block px-4 py-2 hover:bg-blue-700">Students List</Link>
                 <Link href='/students/add' onClick={toggleMenu}   className="block px-4 py-2 hover:bg-blue-700">Create Student</Link>
             </div>
         )}

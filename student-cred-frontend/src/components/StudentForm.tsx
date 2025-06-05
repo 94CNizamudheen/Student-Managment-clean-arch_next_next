@@ -69,6 +69,11 @@ const StudentForm:React.FC = () => {
             <input type="text" name="parantId" value={student.parantId} onChange={handleChange} className="w-full p-2 border border-gray-300 rounded"
             required />
         </div>
+           <div>
+            <label className="block text-sm font-medium" >Class Id</label>
+            <input type="text" name="classId" value={student.classId} onChange={handleChange} className="w-full p-2 border border-gray-300 rounded"
+            required />
+        </div>
         <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded" >{id ? "Update" : "Save"}</button>
       </form>
     </div>

@@ -5,7 +5,7 @@ export default function Home() {
     <div className="min-h-screen bg-gray-100">
       <Navbar />
 
-      <section className="bg-blue-500 text-white py-20">
+      <section className="bg-blue-500 text-white py-20 h">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Welcome to Student Management
@@ -15,7 +15,7 @@ export default function Home() {
             Streamline your school administration with our system.
           </p>
           <div className="space-x-4">
-            <Link href='/students'  className="bg-white text-blue-500 px-6 py-3 rounded-full font-semibold hover:bg-gray-100">Show students list</Link>
+            <Link href='/students/list'  className="bg-white text-blue-500 px-6 py-3 rounded-full font-semibold hover:bg-gray-100">Show students list</Link>
             <Link href='/students/add'  className="bg-white text-blue-500 px-6 py-3 rounded-full font-semibold hover:bg-gray-100">Create a new Student</Link>
           </div>
         </div>
