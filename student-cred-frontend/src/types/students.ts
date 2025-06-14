@@ -2,7 +2,8 @@
 
 
 export interface Student{
-    id:string;
+    _id:string;
+    studentId:string;
     name:string;
     classId:string;
     parantId:string;

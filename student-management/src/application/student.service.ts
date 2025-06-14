@@ -1,9 +1,9 @@
 
 import { Injectable } from "@nestjs/common";
-import { CreateStudentUseCase } from "src/domine/use-cases/students.use-cases";
-import { UpdateStudentUseCase } from "src/domine/use-cases/update-student.use-case";
-import { FindStudentsUseCase } from "src/domine/use-cases/find-student.use-case";
-import { DeleteSutudentUseCase } from "src/domine/use-cases/delete-student.use-case";
+import { CreateStudentUseCase } from "src/use-cases/students.use-cases";
+import { UpdateStudentUseCase } from "src/use-cases/update-student.use-case";
+import { FindStudentsUseCase } from "src/use-cases/find-student.use-case";
+import { DeleteSutudentUseCase } from "src/use-cases/delete-student.use-case";
 import { Student } from "src/domine/entities/students.entity";
 
 @Injectable()

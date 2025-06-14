@@ -1,5 +1,5 @@
-import { Student } from "../entities/students.entity";
-import { StudentRepository } from "../repositories/students.repository";
+import { Student } from "../domine/entities/students.entity";
+import { StudentRepository } from "../domine/repositories/students.repository";
 import { Inject } from "@nestjs/common";
 export class UpdateStudentUseCase{
     constructor(

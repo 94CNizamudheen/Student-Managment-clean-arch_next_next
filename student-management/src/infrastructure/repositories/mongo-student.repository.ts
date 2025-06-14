@@ -10,7 +10,9 @@ export class MongoStudentRepository implements StudentRepository{
     constructor(@InjectModel('Student') private studentModel:Model<StudentDocument>){}
 
     async save(student: Student): Promise<Student> {
+      
         const createdStudent= await this.studentModel.create(student);
+
         return createdStudent as Student
     }
     async findById(id: string): Promise<Student | null> {

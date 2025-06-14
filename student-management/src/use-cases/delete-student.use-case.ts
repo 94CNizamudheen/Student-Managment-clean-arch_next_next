@@ -1,5 +1,5 @@
 
-import { StudentRepository } from "../repositories/students.repository";
+import { StudentRepository } from "../domine/repositories/students.repository";
 import { Inject } from "@nestjs/common";
 export class DeleteSutudentUseCase {
 

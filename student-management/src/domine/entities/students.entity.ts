@@ -1,13 +1,12 @@
 export class Student {
-    id: string;
+    studentId: string;
     name: string;
     classId: string;
     parantId: string;
     constructor(data: Student) {
-        this.id = data.id;
+        this.studentId = data.studentId;
         this.name = data.name;
         this.classId = data.classId;
         this.parantId = data.parantId
     }
-
 }
